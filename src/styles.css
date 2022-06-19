@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+*{
+  margin: 0;
+}
+ body {
+  background: url("./assets/img/3.png")top center no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  margin: 0;
+}
+body::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+
+}
+
+@media (max-width: 765px) {
+    body {
+      background: url("./assets/img/3.png")top center no-repeat;
+      background-size:contain;
+      background-attachment: fixed;
+      overflow: hidden;
+    }
+}
